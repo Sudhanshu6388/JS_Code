@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision_Making</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            border: 5px solid black;
+            border-radius: 10px;
+            background-color: plum;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color: Maroon;  text-decoration: underline; " >Decision Making</h1>
+    </center>
+    <center>
+        <div class="box"  id="box_1">
+            <h2>1. Calculator</h2>
+        <pre style="font-size: 15px; ">
+       const Calculator = (A, B, C) => 
+       { switch (A){
+        case '+': return B+C 
+        break;
+        case '-': return B - C 
+        break;
+        case '*': return B * C 
+        break;
+        case '/': return B / C 
+       }  
+      };
+       </pre >
+        </div>
+       <hr>
+       <div class="box" id="box_2">
+        <h2>2. Check whether the condition is fulfilled or not?</h2>
+        <pre style="font-size: 15px ;" >
+         const Check_divisibility = (N) => {
+         if((N%6===0)&&(N%9===0))  {
+         return "Divisible by both" 
+         }
+         else {
+         return "Not Divisible by both"
+          }
+        };
+    </pre>
+       </div>
+    <hr>
+    <div class="box" id="box_3">
+        <h2>3. Eligible Voter</h2>
+    <pre style="font-size: 15px;">
+        const isEligible = (a) => {
+        if(a>=18){
+        return "Eligible for Voting";
+        }
+        else{
+         return "Not Eligible for Voting"  ;
+            }
+        };
+    </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_4">
+        <h2>4.Find Relation</h2>
+    <pre style="font-size: 15px;">const findRelation = (x,y) => {
+    
+        if(x<y){
+          return (x+ " is smaller than " +y)
+        }
+        else if(x>y){
+          return (x+ " is greater than " +y)
+        }
+        else{
+          return (x+ " is equal to " +y)
+        }
+    };</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_5">
+        <h2>5. Find Grades</h2>
+    <pre style="font-size: 15px;">const findGrades = (a) => {
+      
+        if(a<=10){
+         return "E"
+       }
+       
+      else  if((a>=11) && (a<=20)){
+         return "D"
+       }
+       
+       else if((a>=21) && (a<=30)){
+         return "C"
+       }
+       
+       else if((a>=31) && (a<=40)){
+         return "B"
+       }
+     
+       else{
+       
+         return "A"
+       }
+    };</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_6">
+        <h2>6. Get Value</h2>
+    <pre style="font-size: 15px;">const getValue = (a) => {
+         
+        if((a==="P")||(a==="p")){
+          return "PrepBytes"
+        }
+        else if((a==="Z")||(a==="z")){
+          return "Zenith"
+        }
+        else if((a==="E")||(a==="e")){
+          return "Expert Coder"
+        }
+        else {
+          return "Data Structure"
+        }
+      
+    };</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_7">
+        <h2>7. Find the maximum out of three numbers.</h2>
+    <pre style="font-size: 15px;">const Max_out_of_three = (A,B,C) => {
+        if((A>B) && (A>C)){
+          return A
+        }
+        else if((B>A) && (B>C)){
+          return B
+        }
+        else if((C>A)&& (C>B)){
+          return C
+        }
+        else{
+          return -1
+        }
+    };</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_8">
+        <h2>8. Second Smallest </h2>
+    <pre style="font-size: 15px;">const findSndSmallest = (x,y,z) => {
+        if((x>y && z<y)|| (x<y && z>y)){
+          return y 
+        }
+        else if ((x>y && z>x)|| (y>x && x>z)){
+          return x
+        }
+        else{
+          return z
+        }
+    };</pre>
+    </div>
+    
+    <hr>
+    <div class="box" id="box_9">
+        <h2>9. Check whether the triangle is Acute or Obtuse</h2>
+    <pre style="font-size: 15px;">const Triangle_Check = (A,B,C) => {
+     
+        if((A>=90 )|| (B>=90) ||(C>=90)){
+           return "obtuse"
+         }
+         else{
+           return "acute"
+         } 
+           
+       };
+       </pre>
+    </div>
+    </center>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
